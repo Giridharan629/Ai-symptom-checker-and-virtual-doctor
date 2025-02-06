@@ -22,6 +22,12 @@ app.use(cors({
     credentials: true ,
 }));
 
+app.use((req, res, next) => {
+    console.log(`Request from: ${req.headers.origin}`);
+    next();
+});
+
+
 //api endpoints
 app.get("/",()=>{
     res.send("<h1>API WORKING</h1>")
