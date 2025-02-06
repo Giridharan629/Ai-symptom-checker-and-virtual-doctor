@@ -16,7 +16,11 @@ const allowedOrigins = ["http://localhost:5173","https://ai-symptom-checker-and-
 
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors({ origin:allowedOrigins, credentials: true }));
+app.use(cors({ 
+    origin:allowedOrigins,
+    methods: "GET,POST,PUT,DELETE",
+    credentials: true ,
+}));
 
 //api endpoints
 app.get("/",()=>{
