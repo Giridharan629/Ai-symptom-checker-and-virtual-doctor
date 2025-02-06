@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+
+*{
+    font-family: "Inter", serif;
+}
+
+body{
+    @apply bg-[url(/images/background.svg)] bg-center bg-cover min-h-screen overscroll-none
+}
+
+
+.btn-primary, .btn-secondary{
+    @apply h-[45px] sm:h-[50px] rounded-full text-sm sm:text-lg text-zinc-50 font-semibold hover:scale-102 transition-transform;
+    background: linear-gradient(45deg,#FF625F,#fe727e );
+}
+
+.btn-secondary{
+    @apply   border-2;
+    background: transparent;
+}.btn-secondary.ques{
+    @apply bg-zinc-600 border-zinc-600
+}
+
+input::placeholder{
+    @apply text-xs sm:text-lg
+}
+
+
+.result p{
+    @apply py-3 text-sm sm:text-lg
+}
+
+.result strong{
+    @apply mt-5 text-lg  
+}
+
+.result li{
+    @apply text-sm mb-5 ml-8 list-disc sm:text-lg
+}
+
+.result li strong{
+    @apply mt-24
+}
+
+.profile input::placeholder{
+    @apply text-2xl text-zinc-600
+}
+
+.profile .more input::placeholder{
+    @apply text-lg text-zinc-600
+}
