@@ -12,24 +12,14 @@ const app = express();
 const port = process.env.PORT || 8000;
 connectDb();
 
-const allowedOrigins = ["http://localhost:5173","https://ai-symptom-checker-and-virtual-doctor-client.vercel.app"]
+const allowedOrigins = process.env.FRONTEND_URL
 
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors({ 
-    origin:allowedOrigins,
-    methods: "GET,POST,PUT,DELETE",
-    credentials: true ,
-}));
-
-app.use((req, res, next) => {
-    console.log(`Request from: ${req.headers.origin}`);
-    next();
-});
-
+app.use(cors({ origin:allowedOrigins, credentials: true }));
 
 //api endpoints
-app.get("/",(req, res)=>{
+app.get("/",(req,res)=>{
     res.send("<h1>API WORKING</h1>")
 })
 app.use('/api/auth', authRouter)
