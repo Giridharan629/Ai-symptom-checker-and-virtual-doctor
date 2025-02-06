@@ -12,7 +12,7 @@ const app = express();
 const port = process.env.PORT || 8000;
 connectDb();
 
-const allowedOrigins = ["http://localhost:5173","https://ai-symptom-checker-and-virtual-doctor-client.vercel.app","https://ai-symptom-checker-and-virtual-doctor-client.vercel.app/"]
+const allowedOrigins = ["http://localhost:5173","https://ai-symptom-checker-and-virtual-doctor-client.vercel.app"]
 
 app.use(express.json());
 app.use(cookieParser());
@@ -29,7 +29,7 @@ app.use((req, res, next) => {
 
 
 //api endpoints
-app.get("/",()=>{
+app.get("/",(req, res)=>{
     res.send("<h1>API WORKING</h1>")
 })
 app.use('/api/auth', authRouter)
