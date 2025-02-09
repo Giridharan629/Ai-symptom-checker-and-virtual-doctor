@@ -8,8 +8,8 @@ const LearnMore = () => {
   const navigate = useNavigate()
 
   return (
-    <div>
-      <div class=" text-gray-800 flex items-center justify-center min-h-screen p-6">
+    <div className="bg-gradient-to-br from-[#A8377F] to-[#281574]">
+      <div class=" text-gray-800 flex items-center justify-center min-h-[100dvh] p-6">
         <div class="bg-white shadow-lg rounded-lg p-8 max-w-2xl w-full">
           <h1 class="text-3xl font-bold text-[#FF625F] mb-4">
             🤖 Learn More About Our AI Symptom Checker
