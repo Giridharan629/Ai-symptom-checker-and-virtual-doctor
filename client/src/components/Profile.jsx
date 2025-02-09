@@ -42,13 +42,13 @@ const Profile = () => {
     }
 
   return (
-    <div className="profile min-h-screen text-center grid place-items-center">
+    <div className="profile min-h-[100dvh] text-center grid place-items-center">
 
         {/* ============ header ============= */}
 
         <Logo/>
 
-        <div className=" w-[80%] sm:min-w-[400px] max-w-[500px] bg-white rounded-lg relative p-10">
+        <div className=" w-[80%] sm:min-w-[400px] translate-y-10 max-w-[500px] bg-white rounded-lg relative p-5 sm:p-10">
 
         {/* ========== edit ============ */}
 
@@ -59,12 +59,12 @@ const Profile = () => {
             {/* -----------profileimg------------ */}
                 <img 
                 src="/images/userImg.png" 
-                className='relative w-32 sm:w-44  -top-16 left-[50%] translate-x-[-50%] shadow-2xl border-3 border-white rounded-full'
+                className='absolute w-25 sm:w-44  -top-13 left-[50%] translate-x-[-50%] shadow-2xl border-3 border-white rounded-full'
                 alt="" />
 
             {/* ============== text =========== */}
 
-            <div>
+            <div className='mt-13 sm:mt-30'>
                 {
                     editMode ? (
                         <>
