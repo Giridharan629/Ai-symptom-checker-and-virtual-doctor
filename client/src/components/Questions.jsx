@@ -185,7 +185,7 @@ const Questions = () => {
     
       <Logo/>
 
-      <div className="questions grid w-full min-h-[90vh] place-items-center px-5">
+      <div className="questions grid w-full min-h-[100dvh] place-items-center px-5">
         <div className="page bg-zinc-50 p-5 rounded-2xl">
           <h2 className=" text-xl sm:text-2xl ">
             🩺 Answer a few quick questions to get AI-powered health insights.

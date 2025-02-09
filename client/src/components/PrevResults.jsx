@@ -12,7 +12,7 @@ const PrevResults = () => {
 
 
   return (
-    <div className='flex justify-center h-[100dvh] bg-gradient-to-br from-[#A8377F] to-[#281574] '>
+    <div className='flex justify-center min-h-[100dvh] bg-gradient-to-br from-[#A8377F] to-[#281574] '>
         <div className=""></div>
 
 

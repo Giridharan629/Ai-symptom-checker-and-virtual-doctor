@@ -63,7 +63,7 @@ const VerifyEmail = () => {
     })
 
   return (
-    <div className="grid min-h-screen place-items-center ">
+    <div className="grid min-h-[100dvh] place-items-center ">
       <div
         onClick={() => navigate("/")}
         className="logo w-full max-w-[1500px] left-[50%] translate-x-[-50%] text-2xl font-semibold tracking-widest gap-3 flex items-center absolute top-0 left-5 text-zinc-50 mt-5 cursor-pointer"

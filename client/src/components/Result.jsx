@@ -40,7 +40,7 @@ const Result = () => {
   }
 
   return (
-    <>
+    <div className='bg-gradient-to-br from-[#A8377F] to-[#281574]'>
     <Logo/>
     <div className='container min-h-screen grid justify-center px-5 pb-10 lg:px-20 w-full mx-auto pt-20 transition-transform '>
 
@@ -85,7 +85,7 @@ const Result = () => {
         </div>
 
     </div>
-    </>
+    </div>
   )
 }
 
