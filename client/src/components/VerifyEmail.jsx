@@ -3,6 +3,7 @@ import React, { useContext, useEffect, useRef } from "react";
 import { toast } from "react-toastify";
 import { AppContent } from "../context/AppContext";
 import { useNavigate } from "react-router-dom";
+import Logo from "./Logo";
 
 const VerifyEmail = () => {
 
@@ -63,14 +64,12 @@ const VerifyEmail = () => {
     })
 
   return (
-    <div className="grid min-h-[100dvh] place-items-center ">
-      <div
-        onClick={() => navigate("/")}
-        className="logo w-full max-w-[1500px] left-[50%] translate-x-[-50%] text-2xl font-semibold tracking-widest gap-3 flex items-center absolute top-0 left-5 text-zinc-50 mt-5 cursor-pointer"
-      >
-        <img src="/images/logo1.png" width={40} alt="" />
-        Healix
-      </div>
+    <div className="grid min-h-[100dvh] place-items-center p-5 ">
+      
+      {/* ---------logo------------ */}
+
+      <Logo/>
+
       <form onSubmit={SubmitHandler}>
         <div className="bg-zinc-50 p-5 rounded-lg max-w-[400px]">
             <h2 className="text-2xl font-semibold text-center mb-4">
