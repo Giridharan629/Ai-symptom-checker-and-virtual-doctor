@@ -77,7 +77,7 @@ const Login = () => {
 
   return (
     <>
-    <div  className='flex items-center justify-center h-screen h-[100dvh]'>
+    <div  className='flex items-center justify-center h-[100dvh]'>
         
         <Logo/>
 
