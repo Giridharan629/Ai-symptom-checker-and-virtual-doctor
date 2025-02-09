@@ -100,7 +100,7 @@ const ForgotPassword = () => {
     }
 
   return (
-    <div className="grid min-h-screen min-h-[-webkit-fil-available] place-items-center px-5 ">
+    <div className="grid min-h-screen h-[-webkit-fil-available] place-items-center px-5 ">
       
       <Logo/>
 
