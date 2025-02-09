@@ -9,8 +9,8 @@ const ForgotPassword = () => {
 
     const [email, setEmail] =useState("")
     const [newPassword, setNewPassword] = useState("")
-    const [isOtpSubmitted, setIsOtpSubmitted] = useState(false)
     const [isEmailSent, setIsEmeailSent] = useState(false)
+    const [isOtpSubmitted, setIsOtpSubmitted] = useState(false)
     const [otp, setOtp] = useState("")
     
     const inputRefs = useRef([])
@@ -100,7 +100,7 @@ const ForgotPassword = () => {
     }
 
   return (
-    <div className="grid min-h-screen place-items-center  ">
+    <div className="grid min-h-screen place-items-center px-5 ">
       
       <Logo/>
 
@@ -110,7 +110,7 @@ const ForgotPassword = () => {
       {!isEmailSent &&
 
         <form onSubmit={onSubmitEmail}>
-            <div className="bg-zinc-50 p-5 rounded-lg w-96 max-w-[400px]">
+            <div className="bg-zinc-50 p-5 rounded-lg  max-w-[400px]">
                 <h2 className="text-2xl font-semibold text-center mb-4">
                 Reset Password
                 </h2>
@@ -142,12 +142,12 @@ const ForgotPassword = () => {
 
       {isEmailSent && !isOtpSubmitted &&  
         <form onSubmit={onSubmitOtp}>
-            <div className="bg-zinc-50 p-5 rounded-lg max-w-[400px]">
-                <h2 className="text-2xl font-semibold text-center mb-4">
+            <div className="bg-zinc-50 p-5 rounded-lg w-full sm:max-w-[400px]">
+                <h2 className=" text-lg sm:text-2xl font-semibold text-center mb-4">
                 Email Verify OTP
                 </h2>
 
-                <p className="text-zinc-700 text-center mb-2">Enter the 6-digit code sent to your email id.</p>
+                <p className="text-zinc-700 text-sm sm:text-lg text-center mb-3">Enter the 6-digit code sent to your email id.</p>
 
                 <div className=" flex justify-between items-center" onPaste={handlePaste}>
                     {
@@ -161,14 +161,14 @@ const ForgotPassword = () => {
                             ref={e=>inputRefs.current[index] = e}
                             onInput={(e)=>handleInput(e,index)}
                             onKeyDown={(e)=>handleKeyDown(e,index)}
-                            className="bg-zinc-300 focus:ring-1 focus:outline-0 focus:ring-[#FF625F] h-10 w-10 rounded-md place-items-center "
+                            className="bg-zinc-300 focus:ring-1 focus:outline-0 focus:ring-[#FF625F] h-8 w-8 text-sm sm:text-lg sm:h-10 sm:w-10 rounded-md place-items-center "
                             />
                         ))
                     }
                 </div>
 
                 <div className="grid place-items-center mt-4">
-                    <button type="submit" className="btn-primary tracking-wider w-full">Verify Email</button>
+                    <button type="submit" className="btn-primary tracking-wider w-full">Enter OTP</button>
                 </div>
                     <div onClick={()=>setIsEmeailSent(false)} className="grid place-items-center mt-4 cursor-pointer">
                         <p className="">Want to change Email?</p>
@@ -181,14 +181,14 @@ const ForgotPassword = () => {
 
       {isEmailSent && isOtpSubmitted &&
         <form onSubmit={onSubmitNewPassword}>
-            <div className="bg-zinc-50 p-5 rounded-lg w-96 max-w-[400px]">
+            <div className="bg-zinc-50 p-5 rounded-lg sm:max-w-[400px]">
                 <h2 className="text-2xl font-semibold text-center mb-4">
                 Reset Password
                 </h2>
 
                 <p className="text-zinc-700 text-center mb-2">Please Enter New Password.</p>
 
-                <div className="flex items-center gap-3 mt-3 group bg-zinc-300 p-4 rounded-full group">
+                <div className="flex items-center gap-3 mt-3 group max-sm:text-sm bg-zinc-300 p-4 rounded-full group">
                     <i className="fa-solid fa-lock"></i>
                     <input 
                     type="text" 

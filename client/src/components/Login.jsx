@@ -81,7 +81,7 @@ const Login = () => {
         
         <Logo/>
 
-        <div className="bg-white p-5 rounded-lg w-[90%]  sm:min-w-96">
+        <div className="bg-white p-5 rounded-lg w-[90%]  sm:max-w-96">
             <div className="text-center">
                 {
                     state === "sign up" ?
