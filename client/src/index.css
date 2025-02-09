@@ -6,7 +6,8 @@
 }
 
 body{
-    @apply bg-[url(/images/background.svg)] bg-center bg-cover min-h-screen overscroll-none
+    @apply bg-[url(/images/background.svg)] bg-center bg-cover min-h-screen overscroll-none;
+    height: -webkit-fill-awailable;
 }
 
 
