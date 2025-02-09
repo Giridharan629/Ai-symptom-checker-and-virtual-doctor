@@ -97,7 +97,7 @@ const VerifyEmail = () => {
             </div>
 
             <div className="grid place-items-center mt-4">
-                <button type="submit" className="btn-primary tracking-wider px-5">Verify Email</button>
+                <button type="submit" className="btn-primary tracking-wider px-5 cursor-pointer">Verify Email</button>
             </div>
                 
         </div>

@@ -10,7 +10,7 @@ html{
 }
 
 body{
-    @apply bg-[url(/images/background.svg)] bg-center bg-cover h-screen overscroll-none;
+    @apply bg-[url(/images/background.svg)] bg-center bg-cover h-screen;
     height: -webkit-fill-available;
 }
 
