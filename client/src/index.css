@@ -5,8 +5,12 @@
     font-family: "Inter", serif;
 }
 
+html{
+    height: -webkit-fill-available;
+}
+
 body{
-    @apply bg-[url(/images/background.svg)] bg-center bg-cover min-h-screen overscroll-none;
+    @apply bg-[url(/images/background.svg)] bg-center bg-cover h-screen overscroll-none;
     height: -webkit-fill-available;
 }
 
