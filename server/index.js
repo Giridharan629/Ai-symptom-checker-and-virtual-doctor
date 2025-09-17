@@ -9,7 +9,7 @@ import userRouter from "./routes/userRoutes.js"
 import resultRouter from "./routes/resultRoutes.js";
 
 const app = express();
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 4000;
 connectDb();
 
 const allowedOrigins = process.env.FRONTEND_URL

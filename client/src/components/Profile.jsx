@@ -15,7 +15,7 @@ const Profile = () => {
     const [age, setAge ] = useState(userData.age)
     const [gender, setGender ] = useState(userData.gender)
     const [height, setHeight] = useState(userData.height)
-    const [weight, setWeight] = useState(userData.weight)
+    const [weight, setWeight] = useState(userData.weight) 
 
     const handleUpdate = async()=>{
         axios.defaults.withCredentials = true

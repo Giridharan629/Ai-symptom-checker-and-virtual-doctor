@@ -1,7 +1,6 @@
 
 import bcrypt from 'bcryptjs'
 import jwt from "jsonwebtoken"
-import mongoose, { connect } from 'mongoose';
 import userModel from '../models/userModel.js';
 import transporter from '../config/nodeMailer.js';
 
